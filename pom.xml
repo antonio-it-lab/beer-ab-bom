@@ -15,6 +15,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<name>com.github.antonio-it-lab:ab-bom</name>
+	<description>A configuration of libraries used as base for a spring projects.</description>
+	<url>https://github.com/antonio-it-lab/beer-ab-bom</url>
+
 
 	<licenses>
 		<license>
@@ -23,6 +27,12 @@
 		</license>
 	</licenses>
 
+	<scm>
+		<connection>scm:git:git@github.com:antonio-it-lab/beer-ab-bom.git</connection>
+		<developerConnection>scm:git:git@github.com:antonio-it-lab/beer-ab-bom.git</developerConnection>
+		<url>http://github.com/antonio-it-lab/beer-ab-bom/</url>
+	</scm>
+
 	<organization>
 		<name>AB coop.</name>
 	</organization>
@@ -30,7 +40,8 @@
 	<developers>
 		<developer>
 			<name>Antonio</name>
-			<organization>AB Software, Inc.</organization>
+			<organization>com.github.antonio-it-lab</organization>
+			<organizationUrl>https://github.com/antonio-it-lab</organizationUrl>
 		</developer>
 	</developers>
 
@@ -138,36 +149,36 @@
 	</dependencies>
 
 	<build>
-        <pluginManagement>
-            <plugins>
-                <!--This plugin's configuration is used to store Eclipse m2e settings 
-                    only. It has no influence on the Maven build itself. -->
-                <plugin>
-                    <groupId>org.eclipse.m2e</groupId>
-                    <artifactId>lifecycle-mapping</artifactId>
-                    <version>1.0.0</version>
-                    <configuration>
-                        <lifecycleMappingMetadata>
-                            <pluginExecutions>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>org.apache.maven.plugins</groupId>
-                                        <artifactId>maven-clean-plugin</artifactId>
-                                        <versionRange>[1.0,)</versionRange>
-                                        <goals>
-                                            <goal>clean</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <execute />
-                                    </action>
-                                </pluginExecution>
-                            </pluginExecutions>
-                        </lifecycleMappingMetadata>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-clean-plugin</artifactId>
+										<versionRange>[1.0,)</versionRange>
+										<goals>
+											<goal>clean</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<execute />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
